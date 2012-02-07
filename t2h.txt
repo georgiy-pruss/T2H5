@@ -1,0 +1,180 @@
+.. Line starting with two dots is comment and ignored. Can be used for example for HTML equivalents in text.
+
+                  .............................................
+                  .............................................
+                  ..                                         ..
+                  .. ###########    ########    ###     ###  ..
+                  .. ###########   ##########   ###     ###  ..
+                  ..     ###       ###    ###   ###     ###  ..
+                  ..     ###              ###   ###     ###  ..
+                  ..     ###             ###    ###########  ..
+                  ..     ###           ###      ###########  ..
+                  ..     ###         ###        ###     ###  ..
+                  ..     ###        ###         ###     ###  ..
+                  ..     ###       ##########   ###     ###  ..
+                  ..     ###       ##########   ###     ###  ..
+                  ..                                         ..
+                  .............................................
+                  .............................................
+
+
+                                 T2H            .. first header is document title and the only H1 header
+                                 ===            .. of the document.this is the comment till the end of line
+
+                  ::TOC                         .. here we'll insert TOC. again, it can be repeated in text
+
+                  .. 1. Header 2
+                  ..    1.1. Header3
+
+Header 2
+========
+
+  The header of level 2 (H2) is underlined with '='s, the header of level 3 (H3) -- underline of minuses.
+  A header (and other elements) can start at any position. Indents are ignored (except lists).
+
+                    Multi-Line
+                    Header 3
+                    ----------
+The text after the header can go without a blank line separation, while the paragraphs do require
+a blank line between them.
+..
+.. such comments don't break text stream
+..
+The end of paragraph 2.
+.:99                          .. formatting comments do break the stream
+The third paragraph.          .. =======================================
+There can be any UNICODE
+characters in the text.i
+128 €‚ƒ„… †‡ ˆ‰Š ‹ŒŽ ‘’ “”• – — ˜™š› œžŸ
+160 ( ) ¡¢£¤¥¦§ ¨©ª «¬® ¯°±²³´µ¶·¸ ¹º» ¼½¾¿ ÀÁÂÃÄÅÆ Ç
+200 ÈÉÊË ÌÍÎÏ Ð Ñ ÒÓÔÕÖ × Ø ÙÚÛÜ Ý Þ ß àáâãäå æ ç èéêë ìíîï
+240 ð ñ òóôõö ÷ ø ùúûü ý þ ÿ ĀāĂăĄą ĆćĈĉĊċČč ĎďĐđ ĒēĔĕĖė
+280 ĘęĚě ĜĝĞğĠġĢģ ĤĥĦħ ĨĩĪīĬĭĮįİı Ĳĳ Ĵĵ Ķķĸ ĹĺĻļĽľĿ
+320 ŀŁł ŃńŅņŇňŉŊŋ ŌōŎŏŐő Œœ ŔŕŖŗŘř ŚśŜŝŞşŠš ŢţŤťŦŧ
+360 ŨũŪūŬŭŮůŰűŲų Ŵŵ ŶŷŸ ŹźŻżŽž ... ǺǻǼǽǾǿ ... 536 ... ȘșȚț(ĂăÂâÎîŞş)
+913 ΑΒΓΔΕΖΗΘ ΙΚΛΜΝΞ ΟΠΡ΢ΣΤΥΦΧΨΩ ΪΫάέήίΰ αβγδεζηθ ικλμνξ οπρςστυφχψω ϊϋόύώ
+1025 ЁЂЃЄЅІЇЈ ЉЊЋЌЍЎЏ
+1040 АБВГД ЕЖЗ ИЙКЛМН ОПРСТ УФХЦЧШЩЪ ЫЬЭЮЯ абвгд ежз ийклмн опрст уфхцчшщъ ыьэюя ѐёђѓєѕіїј љњћќѝўџ ௵
+– — ― ‖ ‗ ‘’‚ ‛ “”„ ‟ †‡•…‰ ′ ″ ‴ ‹›‼ ⁰⁴⁵⁶⁷⁸⁹ⁿ ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₠₡₢₣
+₤₥₦₧₨₩₪₫ €₭₮₯₰₱₲₳₴₵ ℀℁ℂ℃℄℅℆ℇ℈℉ℊ ℋℌℍℎℏℐℑℒℓ℔ℕ №℗℘ℙℚℛℜℝ℞℟℠℡ ™℣ℤ℥ Ω℧ℨ℩KÅℬℭ℮ ℯℰℱℲℳℴℵℶℷℸ
+─│ ┌┐└┘├┤┬┴┼ ═║ ╒╓╔╕╖╗ ╘╙╚╛╜╝ ╞╟╠╡╢╣ ╤╥╦╧╨╩╪╫╬ ▀▄ █ ▌ ▐ ░▒▓ ■ ▬ ◄▼▲► ◊ ○ ◘◙
+☺☻ ♤♧♠♣♥♦♢ ♪♫ ☐☑☒ ♔♕♖♗♘♙ ♚♛♜♝♞♟ ☼☽☾ ☿♀♁♂♃♄♅♆♇ ♈♉♊♋♌♍ ♎♏♐♑♒♓
+␀␡␠␢␣␤ ☎ ★☭☮ ☛ 【】〖〗㔒 㔓㔔㔕㔖㔗㔘㔙㔚㔛 냰닿듸띡묙슸 あいうえお アイウエオ カガキギクグ
+ऄअआइ ईउऊऋऌ ।॥०१२ ३४५६७ ८९॰ ԱԲԳԴԵԶԷԸԹ აბგდევ ზთიკ ლმნოპჟრ กขฃคฅ ฆงจฉชซ ①②③ ❶❷❸ ❝❞
+ﬀﬁﬂﬃﬄﬅﬆ ←↑↓→ ↔↕↨↲ ∂∆∏∑ −∙√∞∩∫ ≈≠≡≤≥ ⌂⌠⌡ ⅛⅜⅝⅞
+
+Specials
+--------
+Symbols Less, Greater, And: < > & and in combinations too: <> <= >= &amp; &nbsp; -- just copied.
+No processing of <html> at all, all <tags with attrs="xxxx:yyyy"> and &symbols; are left intact.
+These are nice-haves: Copyright (C) (inside blanks!), trade mark XXX(TM), mdash -- mdash,
+And this is how 'new line' can be inserted (btw there's no automatic translation of apostrophes
+into typographical apostrophes like ‘ and ’ because it's hard (for the computer) to tell
+where which symbol should be and this would make more harm than use, and in different
+countries there are different rules for these symbols, just use any UNICODE chars you need): //
+• line one //                                                                    ::fmt..too .9.0.another
+• line two, which comes after the first line //
+• the last one, with nbsp: one.,two.,,three.,,,etc.,,,,,,,,,,,,,,,,till here.
+
+To mask all special combinations, just back-tick-escape the first character, so here's just simple text:
+`[[xxxxx]], `http://wwwwwwww, `(C) `(TM) `-- `// `++ etc.
+
+Also back-tick sequences can be used: ``p for `p(+), ``m `m(-), ``d `d(.), ``c `c(:), ``o `o(°),
+``q `q("), ``a `a('), ``n `n(&), ``l `l(<), ``g `g(>), ``e `e(=), ``t `t(~), ``s `s(/), ``x `x(*),
+``u for `u(^), and finally ``b for `b(``).
+Probably ``SPACE must be just ``.
+Alpha-numberic codes are ``//k//, ``//lx//, ``//mxx//, where //k// is of **cdmpetsxnlgoubqa** (see above),
+//l// is of **ABCDEFGHIJKLMNOPQRSTUVW**, and followed by a character //x// out of
+**0-9A-Za-z?!**, and //m// is out of **01234567ijkrvw89** followed by two //x// characters.
+This covers all UNICODE characters till &#65535; (U+FFFF). To encode, use ''t2h.py //code//'' or
+''t2h.py //code-from// //code-to//'' (the result is in file ''chars.txt''), for decoding use
+''t2h.py ``//code//''.
+
+As you could see, there are //italic//, **bold**, --overwritten (deleted)--, ++underlined
+(added)++ and ''monospace (code)'' text. Use double markers for start and end: `// `** `-- `++ `'' (the
+last are two apostrophes, not a single quote character). With `^^ and `~~ you can use also
+^^superscript^^ and ~~subscript~~: //E~~0~~=**A**·sin^^2^^t·cos^^2^^ω//.
+
+HTML Links
+----------
+
+== Implicit links
+These links: http://www.google.com or file:///C:/Users/Geo/Dropbox/Projects/T2H/t2h.txt.htm or
+https://twitter.com/ or ftp://www.eastgame.net can't end with a dot or a comma.
+Use the explicit form to separate them from the punctuation:
+<<http://www.yahoo.com>> (http://www.yahoo.com).
+
+== Explicit links ==                       .. Header of level 4 (H4), and below are H5.
+
+   //Note// Header of level 4 starts with '==', and one of level 5 wih '--'. Optionally,
+   they can end with a row of '=' or '-' till the end of line. All these markers are ignored.
+
+   -- With urls --------------------------------------------------------------------------------
+   Such links are defined with angular brackets for the text and url in parenthesis:
+   `<<text as link>> (`http://www.com) or `<<local>> (/dir/file.ext), which will result in this:
+   <<text as link>> (http://www.com) or <<local>> (/dir/file.ext).
+
+   -- With name references ---------------------------------------------------------------------
+   Or link can be a name with ref-name <<text>>[name]. Then //name// must be defined later.
+
+The full form can be with title `<<link>>formats (url -- title).
+It is NOT recomended to use the quote character (") in urls. Otherwise probably any characters
+are allowed.
+
+<<blah blah blah>> (http://www.yahoo.com)
+
+http://www.yandex.ru
+
+Images
+------
+
+Here's images: [[http://l-userpic.livejournal.com/6119214/1194710]]
+or local: short name -- [[avatar24.jpg]],
+full name -- [[C:\Users\Geo\Dropbox\Projects\T2H\avatar48.png]],
+with link -- <<[[http://www.picamatic.com/show/2009/05/03/06/00/3497064_64x64.png]]>>
+(http://moon-aka-sun.livejournal.com). But just url is recognized as a link, not image:
+http://www.picamatic.com/show/2009/04/23/07/56/3375844_187x72.png (can't end with dot).
+
+full form of image item; alt, title, format, url, utitle may be absent:
+`[[image (alt) -- title]]formats (url -- utitle)
+
+[[http://l-userpic.livejournal.com/6119214/1194710]]
+
+TODO:
+=====
+
+Footnotes: text[note], then below from first position //
+[note] -- explanation
+The same about named links.
+
+Tables: start with +- and so on
+
+Macros: {{name}} and definition below (or above) //
+{{name}} -- text
+
+Char Encoding: //nxxx// for codes 0..262144 (#0..#3FFFF) where n is Y
+
+Direct copy: `b`b......`b`b
+
+HTML: \\......\\ (?)
+
+Blocks:
+
+        Quote: "   (author can't start with '--' (or it would have been recognized as an H5 header then),
+                    use '-' or '—' instead)  //
+        Code:  `                                          //
+        Html:  \                                          //
+        BQ:    | >
+
+Formatting:   .xxxxx
+
+Lists: * + - 1. a)
+
+----------------              .. separator line
+
+Copyright (C) G.P. 2011
+
+================         .. end of document. all below this line is ignored
+
+Here everything is ignored.
+

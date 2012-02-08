@@ -1,4 +1,6 @@
-.. Line starting with two dots is comment and ignored. Can be used for example for HTML equivalents in text.
+.. Line starting with two dots is a comment and is totally ignored.
+      .. Comment can start at any position.
+      .. BTW comments can be used as substitution of HTML items, e.g. title, TOC, images.
 
                   .............................................
                   .............................................
@@ -17,97 +19,185 @@
                   .............................................
                   .............................................
 
+                           T2H      .. the first header in the document is HTML title and the only H1 header
+                           ===      .. and this is obviously the 'end of line' comment
 
-                                 T2H            .. first header is document title and the only H1 header
-                                 ===            .. of the document.this is the comment till the end of line
+                  {{TOC}}                       .. here's the place where TOC will be inserted in HTML
+                  .. 1. Header 2                .. a good idea would be to have it in text as well
+                  .. 2. Multi-Line Header 3     .. but you'll have to take care of it and keep in sync
+                  ..       Header 4             .. by yourself (or copy from the HTML output)
+                  ..          Header 5
+                  ..          Header 5 another example           .. No Header 6 defined.
+                  .. 3. Character set
+                  .. 4. Specials
+                  ..       Back-tick escapes
+                  ..    HTML Links
+                  ..       Implicit links
+                  ..       Explicit links
+                  ..          With urls
+                  ..          With name references
+                  ..          what? -- he said.
+                  ..          nothing, -- answered she.
+                  ..    Images
+                  .. 5. TODO:
+                  ..    Footnotes
+                  ..    Tables
+                  ..    Macros
+                  ..    HTML
+                  ..    Blocks
 
-                  ::TOC                         .. here we'll insert TOC. again, it can be repeated in text
+Header 2                                .. a level 2 header (H2).
+========                                .. denoted by the line of '='s (3 or more)
 
-                  .. 1. Header 2
-                  ..    1.1. Header3
+Here goes the first paragraph. A paragraph consists of all text (and comment) lines until
+an empty line (actually there are some other special cases). The place and alignment of the text
+in usual paragraphs (and other elements, except lists, I guess)
+  does      not            matter.
+                                                              As long as there's no empty lines inside.
+                          ..
+                          .......  the comments don't break paragraphs
+                          ..
+So only this is the last line of the first paragraph.
 
-Header 2
-========
+                    Multi-Line          .. level 3 header (H3) denoted by the line of '-'s below
+                    Header 3            .. the headers can be multi-line
+                    ----------          .. here it ends. next item can go after the header without empty line.
+This is the second paragraph.           .. because the headers have the explicit end, of course.
+There can be format specifications for
+paragraphs and other blocks of text.
+They are located on the right. Look -->                                                  .:99
+Or they can start the line. In such
+cases the text stream IS broken.
+.:.(                                    .. this format DOES break the paragraph above
+So here's the third paragraph.
+The lines of the paragraph are joined with the space character. That is
+A
+B
+is totally equal to A B.
 
-  The header of level 2 (H2) is underlined with '='s, the header of level 3 (H3) -- underline of minuses.
-  A header (and other elements) can start at any position. Indents are ignored (except lists).
+== Header 4 ==
 
-                    Multi-Line
-                    Header 3
-                    ----------
-The text after the header can go without a blank line separation, while the paragraphs do require
-a blank line between them.
-..
-.. such comments don't break text stream
-..
-The end of paragraph 2.
-.:99                          .. formatting comments do break the stream
-The third paragraph.          .. =======================================
-There can be any UNICODE
-characters in the text.i
-128 €‚ƒ„… †‡ ˆ‰Š ‹ŒŽ ‘’ “”• – — ˜™š› œžŸ
-160 ( ) ¡¢£¤¥¦§ ¨©ª «¬® ¯°±²³´µ¶·¸ ¹º» ¼½¾¿ ÀÁÂÃÄÅÆ Ç
-200 ÈÉÊË ÌÍÎÏ Ð Ñ ÒÓÔÕÖ × Ø ÙÚÛÜ Ý Þ ß àáâãäå æ ç èéêë ìíîï
-240 ð ñ òóôõö ÷ ø ùúûü ý þ ÿ ĀāĂăĄą ĆćĈĉĊċČč ĎďĐđ ĒēĔĕĖė
-280 ĘęĚě ĜĝĞğĠġĢģ ĤĥĦħ ĨĩĪīĬĭĮįİı Ĳĳ Ĵĵ Ķķĸ ĹĺĻļĽľĿ
-320 ŀŁł ŃńŅņŇňŉŊŋ ŌōŎŏŐő Œœ ŔŕŖŗŘř ŚśŜŝŞşŠš ŢţŤťŦŧ
-360 ŨũŪūŬŭŮůŰűŲų Ŵŵ ŶŷŸ ŹźŻżŽž ... ǺǻǼǽǾǿ ... 536 ... ȘșȚț(ĂăÂâÎîŞş)
-913 ΑΒΓΔΕΖΗΘ ΙΚΛΜΝΞ ΟΠΡ΢ΣΤΥΦΧΨΩ ΪΫάέήίΰ αβγδεζηθ ικλμνξ οπρςστυφχψω ϊϋόύώ
-1025 ЁЂЃЄЅІЇЈ ЉЊЋЌЍЎЏ
-1040 АБВГД ЕЖЗ ИЙКЛМН ОПРСТ УФХЦЧШЩЪ ЫЬЭЮЯ абвгд ежз ийклмн опрст уфхцчшщъ ыьэюя ѐёђѓєѕіїј љњћќѝўџ ௵
-– — ― ‖ ‗ ‘’‚ ‛ “”„ ‟ †‡•…‰ ′ ″ ‴ ‹›‼ ⁰⁴⁵⁶⁷⁸⁹ⁿ ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ ₠₡₢₣
-₤₥₦₧₨₩₪₫ €₭₮₯₰₱₲₳₴₵ ℀℁ℂ℃℄℅℆ℇ℈℉ℊ ℋℌℍℎℏℐℑℒℓ℔ℕ №℗℘ℙℚℛℜℝ℞℟℠℡ ™℣ℤ℥ Ω℧ℨ℩KÅℬℭ℮ ℯℰℱℲℳℴℵℶℷℸ
-─│ ┌┐└┘├┤┬┴┼ ═║ ╒╓╔╕╖╗ ╘╙╚╛╜╝ ╞╟╠╡╢╣ ╤╥╦╧╨╩╪╫╬ ▀▄ █ ▌ ▐ ░▒▓ ■ ▬ ◄▼▲► ◊ ○ ◘◙
-☺☻ ♤♧♠♣♥♦♢ ♪♫ ☐☑☒ ♔♕♖♗♘♙ ♚♛♜♝♞♟ ☼☽☾ ☿♀♁♂♃♄♅♆♇ ♈♉♊♋♌♍ ♎♏♐♑♒♓
-␀␡␠␢␣␤ ☎ ★☭☮ ☛ 【】〖〗㔒 㔓㔔㔕㔖㔗㔘㔙㔚㔛 냰닿듸띡묙슸 あいうえお アイウエオ カガキギクグ
-ऄअआइ ईउऊऋऌ ।॥०१२ ३४५६७ ८९॰ ԱԲԳԴԵԶԷԸԹ აბგდევ ზთიკ ლმნოპჟრ กขฃคฅ ฆงจฉชซ ①②③ ❶❷❸ ❝❞
-ﬀﬁﬂﬃﬄﬅﬆ ←↑↓→ ↔↕↨↲ ∂∆∏∑ −∙√∞∩∫ ≈≠≡≤≥ ⌂⌠⌡ ⅛⅜⅝⅞
+   Header of level 4 starts with '==', and one of level 5 with '--'.
+
+   -- Header 5 --
+         To distinguish header-5 from direct speech, let's require header-5 to always end
+         with two or more minuses. For the symmetry, header-4 must end with '==' as well.
+   -- Header 5 another example ----------------------------------------------------------------
+                                            .. btw headers don't require any text after them
+
+Character set
+-------------
+The text can contain any UNICODE characters.
+For example, typographical: [] ‰  ‛ ‟ ‚‘’„“” ‹›«»¿¡‼…·• §№¶†‡µ ©®™ ¦¬¯°ªº – — ― ‗‖ ␀␡␠␢␣⌂
+Currency symbols: €¢£¤¥ƒ ₠₡₢₣ ₤₥₦₧₨₩₪₫ ₭₮₯₰ ₱₲₳₴₵
+Extended Latin: ÀÁÂÃÄÅÆ Ç ÈÉÊË ÌÍÎÏ Ð Ñ ÒÓÔÕÖØ ÙÚÛÜ Ý àáâãäåæ ç èéêë ìíîï ð ñ òóôõöø ùúûü ý Þþß ﬀﬁﬂﬃﬄﬅﬆ
+Extreme Latin: ĀāĂăÂâĄąǺǻǼǽ ĆćĈĉĊċČč ĎďĐđ ĒēĔĕĖėĘęĚě ĜĝĞğĠġĢģ ĤĥĦħ ĨĩĪīĬĭĮįİıÎî Ĳĳ Ĵĵ Ķķĸ ĹĺĻļĽľĿŀŁł
+ŃńŅņŇňŉŊŋ ŌōŎŏŐőǾǿ Œœ ŔŕŖŗŘř ŚśŜŝŞşŠšȘș ȚțŢţŤťŦŧ ŨũŪūŬŭŮůŰűŲų Ŵŵ ŶŷŸ ŹźŻżŽž Ÿÿ
+Greek: ΑΒΓΔΕΖΗΘ ΙΚΛΜΝΞ ΟΠΡ΢ΣΤΥΦΧΨΩ ΪΫάέήίΰ αβγδεζηθ ικλμνξ οπρςστυφχψω ϊϋόύώ
+Cyrillic: АБВГД ЕЖЗ ИЙКЛМН ОПРСТ УФХЦЧШЩЪ ЫЬЭЮЯ абвгд ежз ийклмн опрст уфхцчшщъ ыьэюя
+ЁЂЃҐЄЅІЇЈ ЉЊЋЌЍЎЏ ѐёђѓґєѕіїј љњћќѝўџ
+Other letter-like: ℀℁ℂ℃℄℅℆ℇ℈℉ℊ ℋℌℍℎℏℐℑℒℓ℔ℕ ℗℘ℙℚℛℜℝ℞℟℠ ℣ℤ℥ Ω℧ℨ℩KÅℬℭ℮ ℯℰℱℲℳℴℵℶℷℸ ℡
+Graphics: ─│ ┌┐└┘ ├┤┬┴┼ ═║ ╒╓╔╕╖╗ ╘╙╚╛╜╝ ╞╟╠╡╢╣ ╤╥╦╧╨╩╪╫╬ ▀▄ █ ▌ ▐ ░▒▓ ■ ▬ ◄▼▲► ◊ ○ ◘◙
+☺☻ ♤♧♠♣♥♦♢ ♪♫ ←↑↓→ ↔↕↨↲ ☐☑☒ ♔♕♖♗♘♙ ♚♛♜♝♞♟ ☼☽☾ ☿♀♁♂ ♃♄♅♆♇ ♈♉♊ ♋♌♍ ♎♏♐ ♑♒♓ ☎ ★☭☮☛
+CJK: 【】〖〗Chinese: 㔒㔓㔔㔕㔖㔗㔘㔙㔚㔛 Korean: 냰닿듸띡묙슸 Japanese: あいうえお アイウエオ カガキギクグ
+Devanagari: ऄअआइ ईउऊऋऌ ।॥०१२ ३४५६७ ८९॰ Armenian: ԱԲԳԴԵԶԷԸԹ Georgian: აბგდევ ზთიკ ლმნოპჟრ Thai: กขฃคฅ ฆงจฉชซ
+Maths: −±×÷⁄ ∂∆∏∑∫ ∇∗∴∠⊥ ∅∀∃∄∩∪ ∧∨⊕⊗ ∈∉∋⊆⊇⊂⊄⊃ ∙√∞ ≈≠≡≤≥ ⌠⌡ ′ ″ ‴ ⁰¹²³⁴⁵⁶⁷⁸⁹ⁿ ₀₁₂₃₄ ₅₆₇₈₉ ₊₋₌₍₎ ①②③ ❶❷❸ ❝❞
+½ ¼¾ ⅛⅜⅝⅞ And many many others symbols ௵
 
 Specials
 --------
-Symbols Less, Greater, And: < > & and in combinations too: <> <= >= &amp; &nbsp; -- just copied.
-No processing of <html> at all, all <tags with attrs="xxxx:yyyy"> and &symbols; are left intact.
-These are nice-haves: Copyright (C) (inside blanks!), trade mark XXX(TM), mdash -- mdash,
-And this is how 'new line' can be inserted (btw there's no automatic translation of apostrophes
-into typographical apostrophes like ‘ and ’ because it's hard (for the computer) to tell
-where which symbol should be and this would make more harm than use, and in different
-countries there are different rules for these symbols, just use any UNICODE chars you need): //
-• line one //                                                                    ::fmt..too .9.0.another
-• line two, which comes after the first line //
-• the last one, with nbsp: one.,two.,,three.,,,etc.,,,,,,,,,,,,,,,,till here.
+These three sequences are replaced automatically: (C)→© inside blanks, (TM)→™ after words (like this(TM)),
+`-- → ― after blanks.
+
+No HTML tags or symbols are modified , so this fragment: < > & <!-- <i> &amp; &nbsp; will be shown in the HTML
+output exactly as it is written here.
+
+The apostrophes are not translated automatically into ‘ and ’ -- because it's rather hard (for the computer)
+to tell where which symbol should be and that would make more harm than use. Also, in different
+countries there are different rules for these symbols. So just use any UNICODE characters you find suitable.
+
+New line break is marked by two slashes at the end of line or between spaces: //
+new line // another new line.
+
+Non-breaking space is a dot and commas: one.,two.,,three.,,,many.,,,,,,,,,,,,,,,,till here.
+
+== Back-tick escapes ==
+
+You can also use back-tick escapes to include any character in the text:
+`p `m `d `c `o `q `a `n `l `g `e `t `s `x `u `b or ` with a blank will be converted into:
+ +  -  .  :  °  "  '  &  <  >  =  ~  /  *  ^  `    ` (i.e. to include a back-tick, write `b or ` ).
+
+You can use also two- and three-character sequences, like //lx//, //mxx// (also //nxxx// in the future).
+//k// is a letter from **ABCDEFGHIJKLMNOPQRSTUVWX**, //l// is from **01234567ijkrvw89**, and //x// is
+from **0-9A-Za-z?!** This covers all UNICODE characters till &#65535; (U+FFFF).
+In the future, //n// will be **Y** and will cover range 0..262144 (#0..#3FFFF).
+To see the code of a character or character set, execute the command:
+  t2h.py char  or
+  t2h.py charfrom charto   (the result will be in file chars.txt).
+where chars can be 'c (! to ~ or what shell will allow you, " ^^ for " ^), +decimal, #hexadecimal
+For decoding run this:  t2h.py `k | `lx | `mxx.
+
+To mask a string from interpretation use ``...``.
+
+
+
+
 
 To mask all special combinations, just back-tick-escape the first character, so here's just simple text:
-`[[xxxxx]], `http://wwwwwwww, `(C) `(TM) `-- `// `++ etc.
+`[[...]], `(C) `(TM) `++ `-- `// etc.
 
-Also back-tick sequences can be used: ``p for `p(+), ``m `m(-), ``d `d(.), ``c `c(:), ``o `o(°),
-``q `q("), ``a `a('), ``n `n(&), ``l `l(<), ``g `g(>), ``e `e(=), ``t `t(~), ``s `s(/), ``x `x(*),
-``u for `u(^), and finally ``b for `b(``).
-Probably ``SPACE must be just ``.
-Alpha-numberic codes are ``//k//, ``//lx//, ``//mxx//, where //k// is of **cdmpetsxnlgoubqa** (see above),
-//l// is of **ABCDEFGHIJKLMNOPQRSTUVW**, and followed by a character //x// out of
-**0-9A-Za-z?!**, and //m// is out of **01234567ijkrvw89** followed by two //x// characters.
-This covers all UNICODE characters till &#65535; (U+FFFF). To encode, use ''t2h.py //code//'' or
-''t2h.py //code-from// //code-to//'' (the result is in file ''chars.txt''), for decoding use
-''t2h.py ``//code//''.
 
 As you could see, there are //italic//, **bold**, --overwritten (deleted)--, ++underlined
 (added)++ and ''monospace (code)'' text. Use double markers for start and end: `// `** `-- `++ `'' (the
 last are two apostrophes, not a single quote character). With `^^ and `~~ you can use also
 ^^superscript^^ and ~~subscript~~: //E~~0~~=**A**·sin^^2^^t·cos^^2^^ω//.
 
+i em
+b strong
+  dfn
+  code
+tt
+  kbd
+  samp
+  var
+  cite -- title of smbd's work
+blockquote
+  q
+
+##xxx         label: <a name="xxx"/>
+@@...@@       highlight text <span class=hilite>...</span>
+
+``...``       literal text, no interpretation (all ** // ^^ << etc are passed 'as is')
+''...''       monospace text, <tt>...</tt> (but x**y**z will have bold y between x and z)
+""...""       literal AND monospace text, <tt>...</tt> AND no interpretation
+
+
+
 HTML Links
 ----------
 
-== Implicit links
-These links: http://www.google.com or file:///C:/Users/Geo/Dropbox/Projects/T2H/t2h.txt.htm or
-https://twitter.com/ or ftp://www.eastgame.net can't end with a dot or a comma.
-Use the explicit form to separate them from the punctuation:
-<<http://www.yahoo.com>> (http://www.yahoo.com).
+== Implicit links ==
+
+These links:
+  http://www.google.com or
+  file:///C:/tmp/abc.htm or
+  https://twitter.com/ or
+  ftp://ftp.sunet.se/ are //not// translated to links by default.
+To make them links, surround them with angle brackets:
+  <<http://www.yahoo.com>>,
+  <<https://twitter.com/>>,
+  <<ftp://ftp.sunet.se/pub/lang/cygwin/>>,
+  <<file:///C:\Users\Geo\AppData\Local\Temp\t2h\t2h.txt>>,
+  <<t2h.txt.htm>> `(no 'file:///' for relative paths).
+You can omit 'http://' if the url starts with 'www.' prefix:
+  <<www.google.com>>,
+  <<www.kat.ph/new/>>,
+and you can omit 'file:///' even for the local resources with absolute paths:
+  <<\Users\Geo\AppData\Local\Temp\t2h\t2h.txt>>,
+  <<C:\Users\Geo\AppData\Local\Temp\t2h\t2h.txt>>.
 
 == Explicit links ==                       .. Header of level 4 (H4), and below are H5.
 
-   //Note// Header of level 4 starts with '==', and one of level 5 wih '--'. Optionally,
-   they can end with a row of '=' or '-' till the end of line. All these markers are ignored.
 
    -- With urls --------------------------------------------------------------------------------
    Such links are defined with angular brackets for the text and url in parenthesis:
@@ -116,6 +206,9 @@ Use the explicit form to separate them from the punctuation:
 
    -- With name references ---------------------------------------------------------------------
    Or link can be a name with ref-name <<text>>[name]. Then //name// must be defined later.
+
+-- what? -- he said.
+-- nothing, -- answered she.
 
 The full form can be with title `<<link>>formats (url -- title).
 It is NOT recomended to use the quote character (") in urls. Otherwise probably any characters
@@ -128,38 +221,68 @@ http://www.yandex.ru
 Images
 ------
 
-Here's images: [[http://l-userpic.livejournal.com/6119214/1194710]]
-or local: short name -- [[avatar24.jpg]],
-full name -- [[C:\Users\Geo\Dropbox\Projects\T2H\avatar48.png]],
-with link -- <<[[http://www.picamatic.com/show/2009/05/03/06/00/3497064_64x64.png]]>>
-(http://moon-aka-sun.livejournal.com). But just url is recognized as a link, not image:
+Here's images: remote -- [[http://www.simtech-international.ro/images/ro-flag.jpg]]
+or local: short name -- [[avatar24.png]],
+full name -- IE,Chrome:[[C:\Users\Geo\Dropbox\HTML\favicon.ico]], All:[[file:///C:/Users/Geo/Dropbox/HTML/favicon.ico]],
+inline image: [[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQMAAADaua+7AAAABlBMVEX//4AAAABmnmO0AAAAUklEQVR4XgWAsQnAIBAAL88Xli/8APJlpjBgmyJF9pFU4hTipAEhaGr0mFh10gI8M0uAV+JbvE3hBL0fZMFhsMcmq0NPeDYGnctBRlDdKNLRXH+EGA1wHh/tZgAAAABJRU5ErkJggg==]],
+image as link -- <<[[http://l-stat.livejournal.com/img/profile_icons/send-gift.gif]]>>
+(http://moon-aka-sun.livejournal.com).
+But just an image url is recognized as a link, not image:
 http://www.picamatic.com/show/2009/04/23/07/56/3375844_187x72.png (can't end with dot).
 
 full form of image item; alt, title, format, url, utitle may be absent:
 `[[image (alt) -- title]]formats (url -- utitle)
 
-[[http://l-userpic.livejournal.com/6119214/1194710]]
+[[http://l-userpic.livejournal.com/6119214/1194710]] .. nothing around, so it's a paragraph by itself
 
 TODO:
 =====
 
-Footnotes: text[note], then below from first position //
-[note] -- explanation
+Footnotes
+---------
+text[note], then below from first position
+______________
+[note] explanation
+
 The same about named links.
 
-Tables: start with +- and so on
+Tables
+------
+simple tables start with +- and so on
 
-Macros: {{name}} and definition below (or above) //
+complex tables start with += and so on with each cell bounded.
+
+Macros
+------
+: {{name}} and definition below (or above) //
 {{name}} -- text
 
-Char Encoding: //nxxx// for codes 0..262144 (#0..#3FFFF) where n is Y
 
-Direct copy: `b`b......`b`b
+HTML
+----
 
-HTML: \\......\\ (?)
+  \\......\\ (?)
 
-Blocks:
+  Para starting with '<' e.g.
+    <div id='xx'>   or
+    <font size="+2">HELLO</font> WORLD!
+  If it starts with
+    <meta or
+    <style or
+    <script or
+    <link or
+    <title
+  it will be put in the head section.
+  Otherwise it'll be put in-place, except prohibited tags
+    <!DOCTYPE
+    <html
+    <head
+    <body.
 
+  No way for inline html currently.
+
+Blocks
+------
         Quote: "   (author can't start with '--' (or it would have been recognized as an H5 header then),
                     use '-' or '—' instead)  //
         Code:  `                                          //

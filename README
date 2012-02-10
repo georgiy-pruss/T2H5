@@ -1,6 +1,68 @@
-This is T2H5 convertor.
+This is T2H convertor (T2H5?)
 
-Description and Python implementation to follow.
+.. comment  .[ .. .] inline and multi-line comment
 
-20110207-164138
+Blah Blah Blah Blah  para if w/o underline
+========= ---------  H2 H3 headers. first = title
+== H4  -- H5         .. but problem with direct spch
 
+--------- ========== separator end
+,, quote -- author.   blockquote
+
+para:: :::  :" :'    next goes pre,as-is pre,int-d
+| # $ /*    :" :'    starting of text    aside marks
+----   _     ''      preformatted  ===  ::  ||
+....  | ...  ...     preformatted           ||
+            :.       end of pre
+> > ...              quoted text
+
+`k `lx `mxx (64K)    a-egl-qstux/fhyz A-X 0-7ijkrvw89
+`nxxx (future,256K)  Y x:0-9A-Za-z?!  `Z is
+`+d... `#hhhh        decimal (\d+), hex codes [0-1a-f]{4}
+`` '' ""             as-is code code+as-is
+(C) (TM) --    //    © ™ ―       line break
+._ .__ .______       nbsp was ., .,, .,,,,
+** // ++ -- ^^ ~~    bold italic add del sup sub
+##label @@hilite@@
+[name] [number]      ... footnote
+
+* xxxx   1. xxx      list (disk)
++ xxxx   a) xxx      list (circle)
+- xxxx   i. xxx      list (square)
+         I. xxx
+
+[[url/file | alt -- title]]   image
+[[name | alt -- title]]
+<<url/file -- title>>   link
+<<text>> (url/file -- title)
+<<text>> [name -- title]
+
+{{macro}} {{TOC}} {{DT}}          term:: defn
+__________
+[number]  define footnote
+[name]    define url -- title     :< :>  html
+{macro}   define macro...
+
+.<  align left      .>  align right
+.=  align center    .!  align justify
+.^  valign top (table), align top (image)
+.~  valign bottom (table), align bottom (image)
+.-  valign center (table), align middle (image)
+.| .||  border 1 2 etc  .|0 no border .|5 etc
+.( .((  margin left 1em 2em (etc)     .(5 etc
+.) .))  margin right 1em 2em (etc)
+./N  rowspan N      .\N  colspan N
+.NN  width: N N% N; N.N; -- Npx, N%, Nem, N.Nem
+.:NN height (specs as above)
+.!NN font size
+.cls specify element class  .#id  element id
+.+color  text color .*bgclr  background color
+ N (kbgcrmyw=KB..) or HHH or HHHHHH or COLORNAME
+.{fonts} font-family:fonts
+.{attr:val;etc}  inline styles
+
+._ .[ .] ., .$ru .? .! .@ .& .;  .' ."
+
+:; :+ :-  block level
+
++----  +====  simple/complex table
